@@ -44,3 +44,8 @@
   object-fit: contain;
   height: 100px;
 }
+
+.MuiAvatar-root,
+.MuiSvgIcon-root {
+  cursor: pointer;
+}

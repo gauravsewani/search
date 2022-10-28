@@ -26,6 +26,17 @@
 .search__inputIcon {
   color: gray;
 }
+.search__inputMic {
+  object-fit: contain;
+  height: 24px;
+  width: 24px;
+}
+.search__inputCamera {
+  object-fit: contain;
+  height: 24px;
+  width: 24px;
+  margin-left: 10px;
+}
 
 .search__buttons {
   margin-top: 30px;
@@ -58,4 +69,19 @@
 
 .search__buttonsHidden {
   display: none !important;
+}
+
+.search__outputPages {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search__outputPages a {
+  text-decoration: inherit;
+}
+
+.search__outputPages a:hover {
+  text-decoration: underline;
 }

@@ -24,7 +24,7 @@ const Home = () => {
       <div className="home__body">
         <img src={logo} alt="" />
         <div className="home__inputContainer">
-          <Search hideButtons />
+          <Search />
         </div>
       </div>
     </div>
