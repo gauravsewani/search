@@ -13,7 +13,7 @@ import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 import RoomIcon from "@mui/icons-material/Room";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 
-function SearchPage() {
+function SearchPage({ toggleTheme, icon }) {
   const [{ term = "batman" }, dispatch] = useStateValue();
 
   //   Live api
@@ -66,6 +66,7 @@ function SearchPage() {
               <div className="searchPage__option">
                 <Link to="/tools">Tools</Link>
               </div>
+              <button onClick={toggleTheme}>{icon}</button>
             </div>
           </div>
         </div>
