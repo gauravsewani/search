@@ -80,6 +80,7 @@
 
 .search__outputPages a {
   text-decoration: inherit;
+  padding: 0 3px;
 }
 
 .search__outputPages a:hover {
