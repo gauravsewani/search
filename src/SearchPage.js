@@ -14,7 +14,7 @@ import RoomIcon from "@mui/icons-material/Room";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 function SearchPage({ toggleTheme, icon }) {
-  const [{ term = "batman" }, dispatch] = useStateValue();
+  const [{ term }, dispatch] = useStateValue();
 
   //   Live api
   const { data } = useGoogleSearch(term);
