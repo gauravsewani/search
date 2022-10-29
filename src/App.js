@@ -3,17 +3,19 @@ import Home from "./pages/Home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import SearchPage from "./SearchPage";
 import { useEffect, useState } from "react";
+import EmojiObjectsIcon from "@mui/icons-material/EmojiObjects";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
 
 function App() {
-  const [icon, setIcon] = useState("🌙");
+  const [icon, setIcon] = useState(<EmojiObjectsIcon />);
   const [theme, setTheme] = useState("light");
   const toggleTheme = () => {
     if (theme === "dark") {
       setTheme("light");
-      setIcon("🌙");
+      setIcon(<EmojiObjectsIcon />);
     } else {
       setTheme("dark");
-      setIcon("💡");
+      setIcon(<DarkModeIcon />);
     }
   };
 
